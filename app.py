@@ -10,8 +10,9 @@ app.layout = html.Div([
     html.H1(children='Visualizing Stock Data (Open Price)'),
     html.H3(children='Input a ticker'),
     dcc.Input(
-        value='TSLA',
-        id='my-input'
+        id='my-input',
+        type='text',
+        value='TSLA'
     ),
     dcc.Graph(id='my-graph')
     ]
